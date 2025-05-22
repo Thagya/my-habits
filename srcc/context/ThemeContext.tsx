@@ -36,7 +36,6 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     });
   };
 
-  // Use the colors from utils/colors.ts
   const colors = isDarkMode ? darkColors : lightColors;
 
   return (

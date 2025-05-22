@@ -63,7 +63,7 @@ export const getAllUsers = async (): Promise<User[]> => {
   }
 };
 
-// Habits functions - now with user-specific storage
+
 export const saveHabits = async (habits: Habit[], userId: string): Promise<void> => {
   try {
     const key = `${HABITS_KEY}${userId}`;
@@ -84,7 +84,7 @@ export const getHabits = async (userId: string): Promise<Habit[]> => {
   }
 };
 
-// Theme functions
+
 export const saveTheme = async (isDark: boolean): Promise<void> => {
   try {
     await AsyncStorage.setItem(THEME_KEY, JSON.stringify(isDark));

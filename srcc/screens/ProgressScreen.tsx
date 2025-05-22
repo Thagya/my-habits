@@ -68,7 +68,7 @@ const ProgressScreen: React.FC = () => {
       </View>
       
       <Text style={[styles.tip, { color: colors.text }]}>
-        Tip: Consistency is key to building good habits. Try to complete your habits at the same time each day.
+         Stay consistent with your habits to see better progress!
       </Text>
     </ScrollView>
   );

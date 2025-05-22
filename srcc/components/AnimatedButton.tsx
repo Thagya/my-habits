@@ -1,4 +1,4 @@
-"use client"
+
 
 import type React from "react"
 import { useRef } from "react"
@@ -77,4 +77,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default AnimatedButton
+export default AnimatedButton;

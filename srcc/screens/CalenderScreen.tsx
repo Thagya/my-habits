@@ -235,7 +235,7 @@ const CalendarScreen: React.FC = () => {
       <View style={styles.tipContainer}>
         <Text style={[styles.tipTitle, { color: colors.text }]}>Tip</Text>
         <Text style={[styles.tipText, { color: colors.text }]}>
-          Research shows it takes about 66 days to form a new habit. Keep your streaks going!
+          Consistency is key! Try to complete your habits daily to build a strong streak.
         </Text>
       </View>
     </ScrollView>

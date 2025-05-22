@@ -113,6 +113,9 @@ const styles = StyleSheet.create({
   icon: {
     fontSize: 20,
   },
+  tabBarLabel: {
+    fontSize: 14,
+  },
 });
 
 export default TabNavigator;

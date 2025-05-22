@@ -1,4 +1,4 @@
-"use client"
+
 
 import type React from "react"
 import { useEffect, useRef } from "react"
@@ -80,4 +80,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default CompletionAnimation
+export default CompletionAnimation;
