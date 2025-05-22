@@ -23,7 +23,7 @@ const CalendarScreen: React.FC = () => {
     refreshHabits();
   }, []);
 
-  // Get habits completed on the selected date
+  //Get habits completed on the selected date
   const getHabitsForDate = () => {
     return habits.filter(habit => 
       habit.completedDates.includes(selectedDate)
