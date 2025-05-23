@@ -30,7 +30,6 @@ const CalendarScreen: React.FC = () => {
     );
   };
 
-  // Calculate the longest streak for a habit
   const calculateLongestStreak = (habitId: string) => {
     const habit = habits.find(h => h.id === habitId);
     if (!habit) return 0;
