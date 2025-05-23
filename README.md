@@ -1,97 +1,114 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+Habit Tracker App
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+ 📱 Build Good Habits, Break Bad Ones!
 
-## Step 1: Start Metro
+A mobile application built with React Native that helps users track and maintain their daily and weekly habits. The app allows users to register, create habits, mark them as completed, and track their progress over time.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+ ✨ Features
 
-```sh
-# Using npm
-npm start
+ 1. User Authentication
+- Local registration and login system
+- Auto-login functionality for returning users
+- Secure storage of user credentials using AsyncStorage
 
-# OR using Yarn
-yarn start
-```
+ 2. Habit Management
+- Create new habits with customizable names
+- Set frequency (daily or weekly)
+- View all habits in an organized list
+- Mark habits as completed
 
-## Step 2: Build and run your app
+ 3. Filtering Options
+- Filter by "All Habits"
+- Filter by "Today's Habits"
+- Filter by "Completed Habits"
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+ 4. Progress Tracking
+- View percentage of habits completed today
+- Track weekly progress
+- Visual representation of habit completion
 
-### Android
+ 5. Data Persistence
+- All data stored locally using AsyncStorage
+- Offline-first approach - no internet connection required
 
-```sh
-# Using npm
+ 🛠️ Tech Stack
+
+- **React Native CLI**: Core development framework
+- **TypeScript**: For type-safe code
+- **React Navigation**: For stack and tab navigation
+- **AsyncStorage**: For local data storage
+- **Context API**: For state management
+
+ 📋 Prerequisites
+
+- Node.js (>= 14.x)
+- npm or yarn
+- React Native development environment set up
+- Android Studio (for Android development)
+- Xcode (for iOS development, macOS only)
+
+ 🚀 Installation
+
+1. Clone the repository:
+
+   git clone https://github.com/Thagya/my-habits.git
+   cd my-habits
+ 
+
+2. Install dependencies:
+   npm install
+    or
+   yarn install
+
+
+3. Install iOS dependencies (macOS only):
+   cd ios && pod install && cd ..
+
+
+ 🏃‍♂️ Running the App
+
+For Android:
+
+
 npm run android
-
-# OR using Yarn
+ or
 yarn android
-```
 
-### iOS
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+For iOS (macOS only):
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
 npm run ios
-
-# OR using Yarn
+or
 yarn ios
-```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+ 📁 Project Structure
 
-## Step 3: Modify your app
 
-Now that you have successfully run the app, let's make changes!
+habit-tracker/
+├── src/
+│   ├── components/        Reusable UI components
+│   ├── screens/           App screens
+│   ├── navigation/        Navigation configuration
+│   ├── services/          API and AsyncStorage services
+│   ├── context/           Context providers
+│   ├── types/             TypeScript type definitions
+│   └── utils/             Utility functions
+├── App.tsx                Entry point
+├── index.js               Register application
+└── ...                    Other configuration files
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
 
-## Congratulations! :tada:
+ 🎥 Demo Video
+                                                                   
+A demonstration video of the app's functionality is available 
 
-You've successfully run and modified your React Native App. :partying_face:
+ 📝 License
 
-### Now what?
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
 
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
