@@ -108,7 +108,8 @@ habit-tracker/
 https://github.com/user-attachments/assets/343251a2-5269-4373-9500-fba683643fe7
 
 
-                                                                   
+
+                                                              
 A demonstration video of the app's functionality is available 
 
  📝 License
